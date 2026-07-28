@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cb3hecb54t7xi"]
+
+[ext_resource type="Texture2D" uid="uid://ckn12qewi747j" path="res://materials/glorp.png" id="1_pka5v"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_pka5v")
+uv1_triplanar = true
+uv1_world_triplanar = true

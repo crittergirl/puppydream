@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://7rn6uledffcx"]
+
+[ext_resource type="Texture2D" uid="uid://dtxfq5ug3fk3v" path="res://materials/leaf.png" id="1_5xdtm"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_5xdtm")
+uv1_triplanar = true
+uv1_world_triplanar = true
