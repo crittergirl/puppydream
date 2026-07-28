@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bgg6qvai3ytqh" path="res://materials/aether_panorama.png" id="1_h2yge"]
 [ext_resource type="Material" uid="uid://7rn6uledffcx" path="res://materials/leaf.tres" id="2_1bvp3"]
+[ext_resource type="Material" uid="uid://b6e1easrd5heq" path="res://materials/neuro.tres" id="3_5vw27"]
 [ext_resource type="Material" uid="uid://cb3hecb54t7xi" path="res://materials/glorp.tres" id="3_h2yge"]
 [ext_resource type="Material" uid="uid://c6u6itekifovn" path="res://materials/aether.tres" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://badgcr1o0vnlg" path="res://owner.gd" id="4_7mycd"]
@@ -43,12 +44,6 @@ height = 0.2
 [sub_resource type="SphereShape3D" id="SphereShape3D_h2yge"]
 radius = 0.1
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mycd"]
-shading_mode = 0
-albedo_texture = ExtResource("1_h2yge")
-uv1_offset = Vector3(0.5, 0, 0.5)
-uv1_triplanar = true
-
 [node name="main" type="Node" unique_id=1878842337]
 
 [node name="dream" type="Node3D" parent="." unique_id=1809232374]
@@ -64,6 +59,56 @@ use_collision = true
 [node name="wall4" type="CSGBox3D" parent="dream" unique_id=816510411]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 0.5)
 material_override = ExtResource("3_h2yge")
+use_collision = true
+
+[node name="wall8" type="CSGBox3D" parent="dream" unique_id=492867176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.5, -0.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall9" type="CSGBox3D" parent="dream" unique_id=1087416407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.5, 3.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall11" type="CSGBox3D" parent="dream" unique_id=381777889]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0.5, 3.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall12" type="CSGBox3D" parent="dream" unique_id=365354190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0.5, 3.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall13" type="CSGBox3D" parent="dream" unique_id=1771191456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0.5, 3.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall14" type="CSGBox3D" parent="dream" unique_id=1005459468]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0.5, 3.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall15" type="CSGBox3D" parent="dream" unique_id=1283693377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0.5, -0.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall16" type="CSGBox3D" parent="dream" unique_id=939455956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0.5, -0.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall17" type="CSGBox3D" parent="dream" unique_id=1367693509]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0.5, -0.5)
+material_override = ExtResource("3_5vw27")
+use_collision = true
+
+[node name="wall10" type="CSGBox3D" parent="dream" unique_id=26029737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0.5, -0.5)
+material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall5" type="CSGBox3D" parent="dream" unique_id=1439748106]
@@ -95,6 +140,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.050000012, 3)
 material_override = ExtResource("2_1bvp3")
 use_collision = true
 size = Vector3(2, 0.1, 6)
+
+[node name="floor3" type="CSGBox3D" parent="dream" unique_id=2114369875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, -0.050000012, 1.5)
+material_override = ExtResource("2_1bvp3")
+use_collision = true
+size = Vector3(11, 0.1, 7)
 
 [node name="floor2" type="CSGBox3D" parent="dream" unique_id=1325163792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.050000012, 1.5)
@@ -177,9 +228,5 @@ current = true
 [node name="charactermovement" parent="dream/puppy" unique_id=996912800 instance=ExtResource("6_272bh")]
 speed = 2.0
 acceleration = 40.0
-
-[node name="CSGBox3D" type="CSGBox3D" parent="dream" unique_id=1953866829]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3)
-material_override = SubResource("StandardMaterial3D_7mycd")
 
 [connection signal="timeout" from="dream/owner/breadcrumbtimer" to="dream/owner" method="_on_breadcrumbtimer_timeout"]

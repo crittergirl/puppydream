@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b6e1easrd5heq"]
+
+[ext_resource type="Texture2D" uid="uid://435va0ek6cfq" path="res://materials/neuro.png" id="1_i23ro"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_i23ro")
+uv1_triplanar = true
+uv1_world_triplanar = true
