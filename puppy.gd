@@ -2,12 +2,21 @@ extends CharacterBody3D
 
 var move_speed := 3.0
 
+var camera_bobbing_t := 0.0
+
 func _process(delta: float) -> void:
 	var owner_direction: Vector3 = (%owner.global_position - global_position).normalized()
 	if (-%camera.global_basis.z).angle_to(owner_direction):
 		var look_vector: Vector3 = (-%camera.global_basis.z).slerp(owner_direction, 20.0 * delta)
 		%camera.look_at(%camera.global_position + look_vector)
 	#%camera.look_at(%target.global_position)
+	
+	# camera bobbing + breathing
+	%camera.position.y = 0.1 + sin(camera_bobbing_t * 20) * 0.01
+	if Vector2(velocity.x, velocity.z).length() > 0.1:
+		camera_bobbing_t += delta
+	else:
+		camera_bobbing_t += delta * 0.1
 
 func _physics_process(delta: float) -> void:
 	
