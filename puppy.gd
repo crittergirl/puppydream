@@ -10,6 +10,12 @@ func _process(delta: float) -> void:
 	#%camera.look_at(%target.global_position)
 
 func _physics_process(delta: float) -> void:
+	
+	# if too far away from owner, teleport to breadcrumb
+	if global_position.distance_to(%owner.global_position) > 10.0:
+		global_position = %breadcrumb1.global_position
+	
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
