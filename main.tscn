@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://c6u6itekifovn" path="res://materials/aether.tres" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://badgcr1o0vnlg" path="res://owner.gd" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://r0i6fqltlj77" path="res://puppy.gd" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://neit7nn2ikcu" path="res://components/charactermovement.tscn" id="6_272bh"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_1bvp3"]
 panorama = ExtResource("1_h2yge")
@@ -124,6 +125,8 @@ shape = SubResource("CapsuleShape3D_h2yge")
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 
+[node name="charactermovement" parent="dream/owner" unique_id=16695786 instance=ExtResource("6_272bh")]
+
 [node name="puppy" type="CharacterBody3D" parent="dream" unique_id=1340431286]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
@@ -142,6 +145,10 @@ shape = SubResource("SphereShape3D_h2yge")
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 current = true
+
+[node name="charactermovement" parent="dream/puppy" unique_id=996912800 instance=ExtResource("6_272bh")]
+speed = 2.0
+acceleration = 40.0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="dream" unique_id=1953866829]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3)

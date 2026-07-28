@@ -10,17 +10,14 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	
 	# pull leash in if owner is higher or lower, makes ramps easier
-	var leash_length := 0.8
+	var leash_length := 1.2
 	if absf(%owner.global_position.y - global_position.y) > 0.05:
-		leash_length = 0.3
+		leash_length = 0.5
 	
+	var movement := Vector2.ZERO
 	var leash_vector_3d: Vector3 = %owner.global_position - global_position
-	var leash_vector := Vector2(leash_vector_3d.x, leash_vector_3d.z)
-	if leash_vector.length() > leash_length:
-		velocity.x = (leash_vector.normalized() * move_speed).x
-		velocity.z = (leash_vector.normalized() * move_speed).y
-	else:
-		velocity.x = 0
-		velocity.z = 0
+	if leash_vector_3d.length() > leash_length:
+		movement = Vector2(leash_vector_3d.x, leash_vector_3d.z).normalized()
+	$charactermovement.move(movement, delta)
 	
 	move_and_slide()
