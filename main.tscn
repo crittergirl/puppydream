@@ -169,6 +169,7 @@ script = ExtResource("4_7mycd")
 [node name="sprite" type="Sprite3D" parent="dream/owner" unique_id=1967777818]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
+alpha_cut = 1
 texture_filter = 4
 texture = ExtResource("7_4c57u")
 
@@ -232,12 +233,14 @@ acceleration = 40.0
 [node name="goob" type="Sprite3D" parent="dream" unique_id=2122799350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0.3, -0.3)
 billboard = 2
+alpha_cut = 1
 texture_filter = 4
 texture = ExtResource("9_kek77")
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.3, 3.3000002)
 billboard = 2
+alpha_cut = 1
 texture_filter = 4
 texture = ExtResource("11_efxa6")
 
