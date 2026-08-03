@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b255svgyx8j5x"]
+
+[ext_resource type="FontFile" uid="uid://dge5ikhwfcty2" path="res://dokdo/dokdo-regular.ttf" id="1_3lnkt"]
+[ext_resource type="Script" uid="uid://cjuj3ayepkoj5" path="res://components/dialogue.gd" id="2_rtv1u"]
+
+[node name="dialogue" type="Label3D" unique_id=1693157045]
+visibility_range_end = 2.0
+pixel_size = 0.002
+billboard = 1
+no_depth_test = true
+texture_filter = 4
+text = "..."
+font = ExtResource("1_3lnkt")
+font_size = 64
+outline_size = 8
+script = ExtResource("2_rtv1u")
+
+[node name="linetimer" type="Timer" parent="." unique_id=1819764553]
+unique_name_in_owner = true
+autostart = true
+
+[connection signal="timeout" from="linetimer" to="." method="_on_linetimer_timeout"]
