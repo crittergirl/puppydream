@@ -28,10 +28,6 @@ ssao_intensity = 1.0
 adjustment_enabled = true
 adjustment_saturation = 1.58
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_h2yge"]
-radius = 0.1
-height = 0.6
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h2yge"]
 radius = 0.1
 height = 0.6
@@ -170,15 +166,9 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
 script = ExtResource("4_7mycd")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="dream/owner" unique_id=879834268]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
-visible = false
-material_override = ExtResource("4_1bvp3")
-mesh = SubResource("CapsuleMesh_h2yge")
-
-[node name="Sprite3D" type="Sprite3D" parent="dream/owner" unique_id=1967777818]
+[node name="sprite" type="Sprite3D" parent="dream/owner" unique_id=1967777818]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
-billboard = 2
 texture_filter = 4
 texture = ExtResource("7_4c57u")
 
