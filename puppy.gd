@@ -9,7 +9,6 @@ func _process(delta: float) -> void:
 	if (-%camera.global_basis.z).angle_to(owner_direction):
 		var look_vector: Vector3 = (-%camera.global_basis.z).slerp(owner_direction, 20.0 * delta)
 		%camera.look_at(%camera.global_position + look_vector)
-	#%camera.look_at(%target.global_position)
 	
 	# camera bobbing + breathing
 	%camera.position.y = 0.1 + sin(camera_bobbing_t * 20) * 0.01

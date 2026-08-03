@@ -8,6 +8,9 @@
 [ext_resource type="Script" uid="uid://badgcr1o0vnlg" path="res://owner.gd" id="4_7mycd"]
 [ext_resource type="Script" uid="uid://r0i6fqltlj77" path="res://puppy.gd" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://neit7nn2ikcu" path="res://components/charactermovement.tscn" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://c5qrc742g6oq6" path="res://characters/owner.png" id="7_4c57u"]
+[ext_resource type="Texture2D" uid="uid://fu2crjm45mtx" path="res://characters/gloob.png" id="9_kek77"]
+[ext_resource type="Texture2D" uid="uid://bx4xbe6o3mi0w" path="res://characters/look.png" id="11_efxa6"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_1bvp3"]
 panorama = ExtResource("1_h2yge")
@@ -169,8 +172,15 @@ script = ExtResource("4_7mycd")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="dream/owner" unique_id=879834268]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+visible = false
 material_override = ExtResource("4_1bvp3")
 mesh = SubResource("CapsuleMesh_h2yge")
+
+[node name="Sprite3D" type="Sprite3D" parent="dream/owner" unique_id=1967777818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
+billboard = 2
+texture_filter = 4
+texture = ExtResource("7_4c57u")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="dream/owner" unique_id=1397733458]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
@@ -228,5 +238,17 @@ current = true
 [node name="charactermovement" parent="dream/puppy" unique_id=996912800 instance=ExtResource("6_272bh")]
 speed = 2.0
 acceleration = 40.0
+
+[node name="goob" type="Sprite3D" parent="dream" unique_id=2122799350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0.3, -0.3)
+billboard = 2
+texture_filter = 4
+texture = ExtResource("9_kek77")
+
+[node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.3, 3.3000002)
+billboard = 2
+texture_filter = 4
+texture = ExtResource("11_efxa6")
 
 [connection signal="timeout" from="dream/owner/breadcrumbtimer" to="dream/owner" method="_on_breadcrumbtimer_timeout"]
