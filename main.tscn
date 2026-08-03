@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://r0i6fqltlj77" path="res://puppy.gd" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://neit7nn2ikcu" path="res://components/charactermovement.tscn" id="6_272bh"]
 [ext_resource type="Texture2D" uid="uid://c5qrc742g6oq6" path="res://characters/owner.png" id="7_4c57u"]
+[ext_resource type="Script" uid="uid://b5dnyn2kkblst" path="res://leash.gd" id="8_dg77c"]
 [ext_resource type="Texture2D" uid="uid://fu2crjm45mtx" path="res://characters/gloob.png" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://bx4xbe6o3mi0w" path="res://characters/look.png" id="11_efxa6"]
 
@@ -35,6 +36,17 @@ height = 0.6
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_272bh"]
 shading_mode = 0
 albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="Curve3D" id="Curve3D_efxa6"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.119275875, 0.39608634, 0.048959374, 0, 0, 0, 0, 0, 0, -0.02809453, 0.15005922, 0.4659518),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg77c"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="SphereMesh" id="SphereMesh_h2yge"]
 radius = 0.1
@@ -173,6 +185,10 @@ alpha_cut = 1
 texture_filter = 4
 texture = ExtResource("7_4c57u")
 
+[node name="leashpointa" type="Marker3D" parent="dream/owner/sprite" unique_id=364079451]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058351286, -0.024999976, 0)
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="dream/owner" unique_id=1397733458]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 shape = SubResource("CapsuleShape3D_h2yge")
@@ -182,6 +198,8 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 
 [node name="charactermovement" parent="dream/owner" unique_id=16695786 instance=ExtResource("6_272bh")]
+speed = 2.0
+deceleration = 30.0
 
 [node name="breadcrumb1" type="Marker3D" parent="dream/owner" unique_id=1647933415]
 unique_name_in_owner = true
@@ -207,6 +225,25 @@ material = SubResource("StandardMaterial3D_272bh")
 process_callback = 0
 autostart = true
 
+[node name="leash" type="Path3D" parent="dream/owner" unique_id=773073129]
+curve = SubResource("Curve3D_efxa6")
+script = ExtResource("8_dg77c")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="dream/owner/leash" unique_id=1139615896]
+polygon = PackedVector2Array(-0.01, -0.001, -0.01, 0.001, 0.01, 0.001, 0.01, -0.001)
+mode = 2
+path_node = NodePath("..")
+path_interval_type = 0
+path_interval = 0.1
+path_simplify_angle = 0.0
+path_rotation = 2
+path_rotation_accurate = false
+path_local = true
+path_continuous_u = true
+path_u_distance = 1.0
+path_joined = false
+material = SubResource("StandardMaterial3D_dg77c")
+
 [node name="puppy" type="CharacterBody3D" parent="dream" unique_id=1340431286]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
@@ -227,8 +264,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
 current = true
 
 [node name="charactermovement" parent="dream/puppy" unique_id=996912800 instance=ExtResource("6_272bh")]
-speed = 2.0
+speed = 1.5
 acceleration = 40.0
+
+[node name="leashpointb" type="Marker3D" parent="dream/puppy" unique_id=1813701154]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
 
 [node name="goob" type="Sprite3D" parent="dream" unique_id=2122799350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0.3, -0.3)
