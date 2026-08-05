@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ckn12qewi747j" path="res://materials/glorp.png" id="1_pka5v"]
 
 [resource]
-transparency = 1
+shading_mode = 0
 albedo_texture = ExtResource("1_pka5v")
 uv1_triplanar = true
 uv1_world_triplanar = true

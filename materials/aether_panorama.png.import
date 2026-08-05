@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgg6qvai3ytqh"
-path.s3tc="res://.godot/imported/aether_panorama.png-5d7d77c2de85570c3db382e91e482b33.s3tc.ctex"
+path="res://.godot/imported/aether_panorama.png-5d7d77c2de85570c3db382e91e482b33.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://materials/aether_panorama.png"
-dest_files=["res://.godot/imported/aether_panorama.png-5d7d77c2de85570c3db382e91e482b33.s3tc.ctex"]
+dest_files=["res://.godot/imported/aether_panorama.png-5d7d77c2de85570c3db382e91e482b33.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

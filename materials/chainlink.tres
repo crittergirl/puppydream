@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c1udrnounkfqe"]
+
+[ext_resource type="Texture2D" uid="uid://bvy7ua7nvh5hq" path="res://materials/chainlink.png" id="1_shjjf"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_shjjf")
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 4

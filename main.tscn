@@ -7,8 +7,8 @@
 [ext_resource type="Material" uid="uid://c6u6itekifovn" path="res://materials/aether.tres" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://badgcr1o0vnlg" path="res://owner.gd" id="4_7mycd"]
 [ext_resource type="Texture2D" uid="uid://cugdjaql3govb" path="res://materials/window.png" id="4_vivmo"]
-[ext_resource type="Texture2D" uid="uid://bvy7ua7nvh5hq" path="res://materials/chainlink.png" id="4_w48qg"]
 [ext_resource type="Script" uid="uid://r0i6fqltlj77" path="res://puppy.gd" id="5_lquwl"]
+[ext_resource type="Material" uid="uid://c1udrnounkfqe" path="res://materials/chainlink.tres" id="5_vivmo"]
 [ext_resource type="PackedScene" uid="uid://neit7nn2ikcu" path="res://components/charactermovement.tscn" id="6_272bh"]
 [ext_resource type="Texture2D" uid="uid://c5qrc742g6oq6" path="res://characters/owner.png" id="7_4c57u"]
 [ext_resource type="Script" uid="uid://b5dnyn2kkblst" path="res://leash.gd" id="8_dg77c"]
@@ -35,12 +35,6 @@ adjustment_saturation = 1.58
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cqfq"]
 albedo_texture = ExtResource("4_vivmo")
-texture_filter = 4
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vivmo"]
-albedo_texture = ExtResource("4_w48qg")
-uv1_triplanar = true
-uv1_world_triplanar = true
 texture_filter = 4
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h2yge"]
@@ -121,61 +115,61 @@ size = Vector3(1, 1, 0.90000004)
 
 [node name="wall18" type="CSGBox3D" parent="dream" unique_id=217337188]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 1.5, 5.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(11, 1, 1)
 
 [node name="wall24" type="CSGBox3D" parent="dream" unique_id=774736117]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, 5.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(2, 1, 1)
 
 [node name="wall25" type="CSGBox3D" parent="dream" unique_id=702487012]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.5, 5.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(3, 1, 1)
 
 [node name="wall27" type="CSGBox3D" parent="dream" unique_id=1992729209]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 5.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(4, 1, 1)
 
 [node name="wall19" type="CSGBox3D" parent="dream" unique_id=1242062272]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 1.5, -2.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(11, 1, 1)
 
 [node name="wall29" type="CSGBox3D" parent="dream" unique_id=889814697]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, -2.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(4, 1, 1)
 
 [node name="wall30" type="CSGBox3D" parent="dream" unique_id=227698621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -2.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(6, 1, 1)
 
 [node name="wall20" type="CSGBox3D" parent="dream" unique_id=1889977552]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1, 1.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 9)
 
 [node name="wall21" type="CSGBox3D" parent="dream" unique_id=1538388685]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, 4)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 4)
 
 [node name="wall22" type="CSGBox3D" parent="dream" unique_id=214956376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, -1)
-material_override = SubResource("StandardMaterial3D_vivmo")
+material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 4)
 
@@ -377,11 +371,11 @@ texture = ExtResource("9_kek77")
 
 [node name="dialogue" parent="dream/goob" unique_id=1693157045 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "absolute eyesore aren't ya"
+text = "quit starin'"
 lines = "don't like how that guy's eyein' me
 absolute eyesore aren't ya
 quit starin'"
-idx = 1
+idx = 2
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.3, 3.3000002)
