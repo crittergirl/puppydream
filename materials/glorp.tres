@@ -4,7 +4,6 @@
 
 [resource]
 transparency = 1
-shading_mode = 0
 albedo_texture = ExtResource("1_pka5v")
 uv1_triplanar = true
 uv1_world_triplanar = true
