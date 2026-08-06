@@ -5,13 +5,9 @@
 [ext_resource type="Material" uid="uid://b6e1easrd5heq" path="res://materials/neuro.tres" id="3_5vw27"]
 [ext_resource type="Material" uid="uid://cb3hecb54t7xi" path="res://materials/glorp.tres" id="3_h2yge"]
 [ext_resource type="Material" uid="uid://c6u6itekifovn" path="res://materials/aether.tres" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://badgcr1o0vnlg" path="res://owner.gd" id="4_7mycd"]
 [ext_resource type="Texture2D" uid="uid://cugdjaql3govb" path="res://materials/window.png" id="4_vivmo"]
-[ext_resource type="Script" uid="uid://r0i6fqltlj77" path="res://puppy.gd" id="5_lquwl"]
 [ext_resource type="Material" uid="uid://c1udrnounkfqe" path="res://materials/chainlink.tres" id="5_vivmo"]
-[ext_resource type="PackedScene" uid="uid://neit7nn2ikcu" path="res://components/charactermovement.tscn" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://c5qrc742g6oq6" path="res://characters/owner.png" id="7_4c57u"]
-[ext_resource type="Script" uid="uid://b5dnyn2kkblst" path="res://leash.gd" id="8_dg77c"]
+[ext_resource type="PackedScene" uid="uid://dkrsk10uxomya" path="res://components/player.tscn" id="8_dg77c"]
 [ext_resource type="Texture2D" uid="uid://fu2crjm45mtx" path="res://characters/gloob.png" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://bx4xbe6o3mi0w" path="res://characters/look.png" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://b255svgyx8j5x" path="res://components/dialogue.tscn" id="14_w48qg"]
@@ -37,32 +33,6 @@ adjustment_saturation = 1.58
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cqfq"]
 albedo_texture = ExtResource("4_vivmo")
 texture_filter = 4
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_h2yge"]
-radius = 0.1
-height = 0.6
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_272bh"]
-shading_mode = 0
-albedo_color = Color(0, 1, 1, 1)
-
-[sub_resource type="Curve3D" id="Curve3D_efxa6"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0.119275875, 0.39608634, 0.048959374, 0, 0, 0, 0, 0, 0, -0.02809453, 0.15005922, 0.4659518),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg77c"]
-shading_mode = 0
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_h2yge"]
-radius = 0.1
-height = 0.2
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_h2yge"]
-radius = 0.1
 
 [node name="main" type="Node" unique_id=1878842337]
 
@@ -157,22 +127,52 @@ use_collision = true
 size = Vector3(6, 1, 1)
 
 [node name="wall20" type="CSGBox3D" parent="dream" unique_id=1889977552]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1, 1.5)
-material_override = ExtResource("5_vivmo")
-use_collision = true
-size = Vector3(1, 2, 9)
-
-[node name="wall21" type="CSGBox3D" parent="dream" unique_id=1538388685]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1, 4)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 4)
+
+[node name="wall31" type="CSGBox3D" parent="dream" unique_id=1087190627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1, -1.5)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(1, 2, 3)
+
+[node name="wall33" type="CSGBox3D" parent="dream" unique_id=777164043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.95, 0.5, 1)
+material_override = ExtResource("4_1bvp3")
+use_collision = true
+size = Vector3(0.1, 1, 2)
+
+[node name="wall32" type="CSGBox3D" parent="dream" unique_id=2025721465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1.5, 1)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(1, 1, 2)
+
+[node name="wall21" type="CSGBox3D" parent="dream" unique_id=1538388685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, 4.5)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(1, 2, 5)
+
+[node name="wall34" type="CSGBox3D" parent="dream" unique_id=318825621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 7.5)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(5, 2, 1)
 
 [node name="wall22" type="CSGBox3D" parent="dream" unique_id=214956376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, -1)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 4)
+
+[node name="wall35" type="CSGBox3D" parent="dream" unique_id=1033589700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -1.5)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(3, 2, 1)
 
 [node name="wall11" type="CSGBox3D" parent="dream" unique_id=381777889]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0.5, 3.5)
@@ -245,10 +245,10 @@ use_collision = true
 size = Vector3(2, 0.1, 6)
 
 [node name="floor3" type="CSGBox3D" parent="dream" unique_id=2114369875]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, -0.050000012, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -0.050000012, 1.5)
 material_override = ExtResource("2_1bvp3")
 use_collision = true
-size = Vector3(11, 0.1, 9)
+size = Vector3(12, 0.1, 9)
 
 [node name="floor2" type="CSGBox3D" parent="dream" unique_id=1325163792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.050000012, 1.5)
@@ -265,103 +265,8 @@ polygon = PackedVector2Array(0, 0, 0, 1, 2, 0)
 [node name="debugcamera" type="Camera3D" parent="dream" unique_id=306844708]
 transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, 0, 3.1, 4)
 
-[node name="owner" type="CharacterBody3D" parent="dream" unique_id=1522787119]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
-script = ExtResource("4_7mycd")
-
-[node name="sprite" type="Sprite3D" parent="dream/owner" unique_id=1967777818]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.325, 0)
-alpha_cut = 1
-texture_filter = 4
-texture = ExtResource("7_4c57u")
-
-[node name="leashpointa" type="Marker3D" parent="dream/owner/sprite" unique_id=364079451]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.058351286, -0.024999976, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="dream/owner" unique_id=1397733458]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
-shape = SubResource("CapsuleShape3D_h2yge")
-
-[node name="target" type="Marker3D" parent="dream/owner" unique_id=1259407569]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
-
-[node name="charactermovement" parent="dream/owner" unique_id=16695786 instance=ExtResource("6_272bh")]
-speed = 2.0
-deceleration = 30.0
-
-[node name="breadcrumb1" type="Marker3D" parent="dream/owner" unique_id=1647933415]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
-top_level = true
-
-[node name="CSGBox3D" type="CSGBox3D" parent="dream/owner/breadcrumb1" unique_id=1134451616]
-visible = false
-size = Vector3(0.1, 0.1, 0.1)
-material = SubResource("StandardMaterial3D_272bh")
-
-[node name="breadcrumb2" type="Marker3D" parent="dream/owner" unique_id=317614440]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
-top_level = true
-
-[node name="CSGBox3D" type="CSGBox3D" parent="dream/owner/breadcrumb2" unique_id=94529613]
-visible = false
-size = Vector3(0.1, 0.1, 0.1)
-material = SubResource("StandardMaterial3D_272bh")
-
-[node name="breadcrumbtimer" type="Timer" parent="dream/owner" unique_id=1818389945]
-process_callback = 0
-autostart = true
-
-[node name="leash" type="Path3D" parent="dream/owner" unique_id=773073129]
-curve = SubResource("Curve3D_efxa6")
-script = ExtResource("8_dg77c")
-
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="dream/owner/leash" unique_id=1139615896]
-polygon = PackedVector2Array(-0.01, -0.001, -0.01, 0.001, 0.01, 0.001, 0.01, -0.001)
-mode = 2
-path_node = NodePath("..")
-path_interval_type = 0
-path_interval = 0.1
-path_simplify_angle = 0.0
-path_rotation = 2
-path_rotation_accurate = false
-path_local = true
-path_continuous_u = true
-path_u_distance = 1.0
-path_joined = false
-material = SubResource("StandardMaterial3D_dg77c")
-
-[node name="puppy" type="CharacterBody3D" parent="dream" unique_id=1340431286]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
-script = ExtResource("5_lquwl")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="dream/puppy" unique_id=1711214915]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
-material_override = ExtResource("4_1bvp3")
-mesh = SubResource("SphereMesh_h2yge")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="dream/puppy" unique_id=1545046984]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
-shape = SubResource("SphereShape3D_h2yge")
-
-[node name="camera" type="Camera3D" parent="dream/puppy" unique_id=491676669]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
-current = true
-
-[node name="leashpointb" type="Marker3D" parent="dream/puppy/camera" unique_id=1813701154]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07794137, -0.09420788)
-
-[node name="charactermovement" parent="dream/puppy" unique_id=996912800 instance=ExtResource("6_272bh")]
-speed = 1.5
-acceleration = 40.0
+[node name="player" parent="dream" unique_id=1119564877 instance=ExtResource("8_dg77c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
 
 [node name="goob" type="Sprite3D" parent="dream" unique_id=2122799350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0.3, -0.3)
@@ -372,11 +277,10 @@ texture = ExtResource("9_kek77")
 
 [node name="dialogue" parent="dream/goob" unique_id=1693157045 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "quit starin'"
+text = "don't like how that guy's eyein' me"
 lines = "don't like how that guy's eyein' me
 absolute eyesore aren't ya
 quit starin'"
-idx = 2
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.3, 3.3000002)
@@ -387,17 +291,15 @@ texture = ExtResource("11_efxa6")
 
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "...?"
+text = "...."
 lines = "..
 ...
 ....
 ...?"
-idx = 3
+idx = 2
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
 stream = ExtResource("16_2cqfq")
 autoplay = true
 max_distance = 8.0
-
-[connection signal="timeout" from="dream/owner/breadcrumbtimer" to="dream/owner" method="_on_breadcrumbtimer_timeout"]
