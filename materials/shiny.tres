@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bmk8y0lwmru2f"]
+
+[ext_resource type="Texture2D" uid="uid://drdvpx57sl845" path="res://materials/shiny.png" id="1_mivv7"]
+
+[resource]
+albedo_texture = ExtResource("1_mivv7")
+metallic = 1.0
+metallic_texture = ExtResource("1_mivv7")
+roughness = 0.0
+texture_filter = 4

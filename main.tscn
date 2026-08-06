@@ -5,11 +5,11 @@
 [ext_resource type="Material" uid="uid://b6e1easrd5heq" path="res://materials/neuro.tres" id="3_5vw27"]
 [ext_resource type="Material" uid="uid://cb3hecb54t7xi" path="res://materials/glorp.tres" id="3_h2yge"]
 [ext_resource type="Material" uid="uid://c6u6itekifovn" path="res://materials/aether.tres" id="4_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://cugdjaql3govb" path="res://materials/window.png" id="4_vivmo"]
+[ext_resource type="Material" uid="uid://ni837cd5egvb" path="res://materials/window.tres" id="4_vivmo"]
 [ext_resource type="Material" uid="uid://c1udrnounkfqe" path="res://materials/chainlink.tres" id="5_vivmo"]
 [ext_resource type="Material" uid="uid://p4aqbomprjfd" path="res://materials/door.tres" id="7_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://dkrsk10uxomya" path="res://components/player.tscn" id="8_dg77c"]
-[ext_resource type="Texture2D" uid="uid://drdvpx57sl845" path="res://materials/shiny.png" id="8_w48qg"]
+[ext_resource type="Material" uid="uid://bmk8y0lwmru2f" path="res://materials/shiny.tres" id="8_vivmo"]
 [ext_resource type="Texture2D" uid="uid://fu2crjm45mtx" path="res://characters/gloob.png" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://bx4xbe6o3mi0w" path="res://characters/look.png" id="11_efxa6"]
 [ext_resource type="AudioStream" uid="uid://b1il2648h2h8s" path="res://sounds/break.mp3" id="14_vivmo"]
@@ -33,16 +33,7 @@ ssao_intensity = 1.0
 adjustment_enabled = true
 adjustment_saturation = 1.58
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cqfq"]
-albedo_texture = ExtResource("4_vivmo")
-texture_filter = 4
-
 [sub_resource type="QuadMesh" id="QuadMesh_ycdy4"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vivmo"]
-shading_mode = 0
-albedo_texture = ExtResource("8_w48qg")
-texture_filter = 4
 
 [node name="main" type="Node" unique_id=1878842337]
 
@@ -78,19 +69,19 @@ use_collision = true
 
 [node name="wall23" type="CSGBox3D" parent="dream" unique_id=1557208966]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.5, 0.5, 5.55)
-material_override = SubResource("StandardMaterial3D_2cqfq")
+material_override = ExtResource("4_vivmo")
 use_collision = true
 size = Vector3(1, 1, 0.90000004)
 
 [node name="wall26" type="CSGBox3D" parent="dream" unique_id=1793166977]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.5, 0.5, 5.55)
-material_override = SubResource("StandardMaterial3D_2cqfq")
+material_override = ExtResource("4_vivmo")
 use_collision = true
 size = Vector3(1, 1, 0.90000004)
 
 [node name="wall28" type="CSGBox3D" parent="dream" unique_id=1033341230]
 transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -9.5, 0.5, -2.5499997)
-material_override = SubResource("StandardMaterial3D_2cqfq")
+material_override = ExtResource("4_vivmo")
 use_collision = true
 size = Vector3(1, 1, 0.90000004)
 
@@ -272,9 +263,10 @@ use_collision = true
 size = Vector3(1, 2, 1)
 
 [node name="wall39" type="CSGBox3D" parent="dream" unique_id=800964438]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.9999999, 1.5)
-material_override = SubResource("StandardMaterial3D_vivmo")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 1.5)
+material_override = ExtResource("8_vivmo")
 use_collision = true
+size = Vector3(0.5, 0.5, 0.5)
 
 [node name="wall3" type="CSGBox3D" parent="dream" unique_id=670156482]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1, 3.5)
@@ -332,11 +324,12 @@ texture = ExtResource("11_efxa6")
 
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
+text = "...."
 lines = "..
 ...
 ....
 ...?"
-idx = 1
+idx = 2
 
 [node name="music_plaza" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)

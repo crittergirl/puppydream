@@ -3,6 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://gy7x1u2lyk6e" path="res://materials/aether.png" id="1_j8328"]
 
 [resource]
-shading_mode = 0
 albedo_texture = ExtResource("1_j8328")
+metallic = 1.0
+metallic_texture = ExtResource("1_j8328")
+roughness = 0.0
+roughness_texture_channel = 1
 texture_filter = 4
+stencil_flags = 2
