@@ -7,7 +7,9 @@
 [ext_resource type="Material" uid="uid://c6u6itekifovn" path="res://materials/aether.tres" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://cugdjaql3govb" path="res://materials/window.png" id="4_vivmo"]
 [ext_resource type="Material" uid="uid://c1udrnounkfqe" path="res://materials/chainlink.tres" id="5_vivmo"]
+[ext_resource type="Material" uid="uid://p4aqbomprjfd" path="res://materials/door.tres" id="7_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://dkrsk10uxomya" path="res://components/player.tscn" id="8_dg77c"]
+[ext_resource type="Texture2D" uid="uid://drdvpx57sl845" path="res://materials/shiny.png" id="8_w48qg"]
 [ext_resource type="Texture2D" uid="uid://fu2crjm45mtx" path="res://characters/gloob.png" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://bx4xbe6o3mi0w" path="res://characters/look.png" id="11_efxa6"]
 [ext_resource type="PackedScene" uid="uid://b255svgyx8j5x" path="res://components/dialogue.tscn" id="14_w48qg"]
@@ -32,6 +34,13 @@ adjustment_saturation = 1.58
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cqfq"]
 albedo_texture = ExtResource("4_vivmo")
+texture_filter = 4
+
+[sub_resource type="QuadMesh" id="QuadMesh_ycdy4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vivmo"]
+shading_mode = 0
+albedo_texture = ExtResource("8_w48qg")
 texture_filter = 4
 
 [node name="main" type="Node" unique_id=1878842337]
@@ -157,10 +166,28 @@ use_collision = true
 size = Vector3(1, 2, 5)
 
 [node name="wall34" type="CSGBox3D" parent="dream" unique_id=318825621]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1.5, 7.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
-size = Vector3(5, 2, 1)
+size = Vector3(5, 1, 1)
+
+[node name="wall37" type="CSGBox3D" parent="dream" unique_id=1079654954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 10)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(1, 1, 4)
+
+[node name="wall36" type="CSGBox3D" parent="dream" unique_id=847764875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 8)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(1, 1, 2)
+
+[node name="wall38" type="CSGBox3D" parent="dream" unique_id=708509804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1.5, 9.5)
+material_override = ExtResource("5_vivmo")
+use_collision = true
+size = Vector3(5, 1, 1)
 
 [node name="wall22" type="CSGBox3D" parent="dream" unique_id=214956376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, -1)
@@ -226,11 +253,27 @@ material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(3, 1, 1)
 
+[node name="wall7" type="CSGBox3D" parent="dream" unique_id=623593719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 9.5)
+material_override = ExtResource("3_h2yge")
+use_collision = true
+size = Vector3(7, 1, 5)
+
+[node name="door" type="MeshInstance3D" parent="dream" unique_id=714906655]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.5, 1.5, 7)
+material_override = ExtResource("7_ycdy4")
+mesh = SubResource("QuadMesh_ycdy4")
+
 [node name="wall2" type="CSGBox3D" parent="dream" unique_id=141242612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, -0.5)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(1, 2, 1)
+
+[node name="wall39" type="CSGBox3D" parent="dream" unique_id=800964438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2351742e-08, 0.9999999, 1.5)
+material_override = SubResource("StandardMaterial3D_vivmo")
+use_collision = true
 
 [node name="wall3" type="CSGBox3D" parent="dream" unique_id=670156482]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1, 3.5)
@@ -289,12 +332,12 @@ texture = ExtResource("11_efxa6")
 
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "...."
+text = "...?"
 lines = "..
 ...
 ....
 ...?"
-idx = 2
+idx = 3
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
