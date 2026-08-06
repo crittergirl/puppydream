@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://drdvpx57sl845" path="res://materials/shiny.png" id="8_w48qg"]
 [ext_resource type="Texture2D" uid="uid://fu2crjm45mtx" path="res://characters/gloob.png" id="9_kek77"]
 [ext_resource type="Texture2D" uid="uid://bx4xbe6o3mi0w" path="res://characters/look.png" id="11_efxa6"]
+[ext_resource type="AudioStream" uid="uid://b1il2648h2h8s" path="res://sounds/break.mp3" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://b255svgyx8j5x" path="res://components/dialogue.tscn" id="14_w48qg"]
 [ext_resource type="AudioStream" uid="uid://17n4oufnrvga" path="res://sounds/plaza.mp3" id="16_2cqfq"]
 
@@ -317,11 +318,10 @@ texture = ExtResource("9_kek77")
 
 [node name="dialogue" parent="dream/goob" unique_id=1693157045 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "absolute eyesore aren't ya"
+text = "don't like how that guy's eyein' me"
 lines = "don't like how that guy's eyein' me
 absolute eyesore aren't ya
 quit starin'"
-idx = 1
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.3, 3.3000002)
@@ -332,16 +332,21 @@ texture = ExtResource("11_efxa6")
 
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "...?"
 lines = "..
 ...
 ....
 ...?"
-idx = 3
+idx = 1
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
+[node name="music_plaza" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
 stream = ExtResource("16_2cqfq")
+autoplay = true
+max_distance = 8.0
+
+[node name="music_break" type="AudioStreamPlayer3D" parent="dream" unique_id=1805433317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 9.5)
+stream = ExtResource("14_vivmo")
 autoplay = true
 max_distance = 8.0
 
