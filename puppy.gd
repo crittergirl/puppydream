@@ -31,6 +31,8 @@ func _physics_process(delta: float) -> void:
 	var leash_length := 1.2
 	if absf(%owner.global_position.y - global_position.y) > 0.05:
 		leash_length = 0.5
+	if Input.is_action_pressed("pull"):
+		leash_length = 0.3
 	
 	var movement := Vector2.ZERO
 	var leash_vector_3d: Vector3 = %owner.global_position - global_position

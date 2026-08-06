@@ -19,6 +19,8 @@ func _process(delta: float) -> void:
 		target_rotation += TAU * 0.1
 	elif input.x > 0:
 		target_rotation -= TAU * 0.1
+	elif Input.is_action_pressed("pull"):
+		target_rotation += TAU * 0.1
 	
 	# interpolate sprite rotation to physics rotation to stop jittering
 	%sprite.global_rotation.y = lerp_angle(%sprite.global_rotation.y, target_rotation, 30 * delta)
