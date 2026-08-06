@@ -310,7 +310,9 @@ texture = ExtResource("9_kek77")
 
 [node name="dialogue" parent="dream/goob" unique_id=1693157045 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
+modulate = Color(0, 1, 0, 1)
 text = "absolute eyesore aren't ya"
+color = Color(0, 1, 0, 1)
 lines = "don't like how that guy's eyein' me
 absolute eyesore aren't ya
 quit starin'"
@@ -325,6 +327,8 @@ texture = ExtResource("11_efxa6")
 
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
+modulate = Color(1, 0, 1, 1)
+color = Color(1, 0, 1, 1)
 lines = "..
 ...
 ....

@@ -1,6 +1,14 @@
 @tool
 extends Label3D
 
+@export var color := Color.WHITE:
+	set(value): modulate = value
+	get(): return modulate
+
+@export var outline := Color.BLACK:
+	set(value): outline_modulate = value
+	get(): return outline_modulate
+
 @export_multiline("dialogue") var lines := "...":
 	set(value):
 		lines = value
