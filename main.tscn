@@ -265,9 +265,6 @@ polygon = PackedVector2Array(0, 0, 0, 1, 2, 0)
 [node name="debugcamera" type="Camera3D" parent="dream" unique_id=306844708]
 transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, 0, 3.1, 4)
 
-[node name="player" parent="dream" unique_id=1119564877 instance=ExtResource("8_dg77c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
-
 [node name="goob" type="Sprite3D" parent="dream" unique_id=2122799350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0.3, -0.3)
 billboard = 2
@@ -277,10 +274,11 @@ texture = ExtResource("9_kek77")
 
 [node name="dialogue" parent="dream/goob" unique_id=1693157045 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40000004, 0)
-text = "don't like how that guy's eyein' me"
+text = "absolute eyesore aren't ya"
 lines = "don't like how that guy's eyein' me
 absolute eyesore aren't ya
 quit starin'"
+idx = 1
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.3, 3.3000002)
@@ -303,3 +301,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
 stream = ExtResource("16_2cqfq")
 autoplay = true
 max_distance = 8.0
+
+[node name="player" parent="dream" unique_id=1119564877 instance=ExtResource("8_dg77c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 5.4)

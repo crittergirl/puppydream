@@ -2,6 +2,11 @@ extends CharacterBody3D
 
 var input := Vector2.ZERO # keyboard movement input
 
+func _ready() -> void:
+	# wait until now to set top_level so they can be moved properly while in editor
+	%breadcrumb1.top_level = true
+	%breadcrumb2.top_level = true
+
 func _process(delta: float) -> void:
 	
 	# interpolate sprite position to physics position to stop jittering
