@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dei5eq8yg61bb"]
+
+[ext_resource type="Material" uid="uid://p4aqbomprjfd" path="res://materials/door.tres" id="1_2pk4p"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ycdy4"]
+
+[node name="door" type="MeshInstance3D" unique_id=1535403596]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+material_override = ExtResource("1_2pk4p")
+mesh = SubResource("QuadMesh_ycdy4")

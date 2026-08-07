@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bhsiaiuf5q1lt"]
+
+[ext_resource type="Texture2D" uid="uid://b0ondl4f6yr8u" path="res://props/table1.png" id="1_h3d66"]
+
+[node name="table1" type="Sprite3D" unique_id=838838506]
+texture = ExtResource("1_h3d66")

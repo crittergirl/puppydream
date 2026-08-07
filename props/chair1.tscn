@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cm0gxl8qotc14"]
+
+[ext_resource type="Texture2D" uid="uid://jyyrdlw83wl" path="res://props/chair1.png" id="1_uao2x"]
+
+[node name="chair1" type="Sprite3D" unique_id=213822192]
+offset = Vector2(0, 16)
+pixel_size = 0.02
+billboard = 2
+texture_filter = 4
+texture = ExtResource("1_uao2x")

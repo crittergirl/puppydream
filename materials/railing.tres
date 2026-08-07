@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ctyds3mhss7x4"]
+
+[ext_resource type="Texture2D" uid="uid://bxil0py0cusj1" path="res://materials/railing.png" id="1_uodim"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_uodim")
+texture_filter = 4
