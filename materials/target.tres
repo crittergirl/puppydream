@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cnwf1dcqtmhmn"]
+
+[ext_resource type="Texture2D" uid="uid://b87s2o73ml7fy" path="res://materials/target.png" id="1_o7x2r"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_o7x2r")
+texture_filter = 4
