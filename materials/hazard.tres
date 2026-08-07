@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ber0ttlnlq3ei"]
+
+[ext_resource type="Texture2D" uid="uid://bcycivk5a7li3" path="res://materials/hazard.png" id="1_mmgl2"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_mmgl2")
+texture_filter = 4

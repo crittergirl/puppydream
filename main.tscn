@@ -19,6 +19,7 @@
 [ext_resource type="Material" uid="uid://dik6yowposx76" path="res://materials/cloud.tres" id="13_cegan"]
 [ext_resource type="AudioStream" uid="uid://b1il2648h2h8s" path="res://sounds/break.mp3" id="14_vivmo"]
 [ext_resource type="PackedScene" uid="uid://b255svgyx8j5x" path="res://components/dialogue.tscn" id="14_w48qg"]
+[ext_resource type="Material" uid="uid://ber0ttlnlq3ei" path="res://materials/hazard.tres" id="15_0odxb"]
 [ext_resource type="PackedScene" uid="uid://dr4hxrov1d7hx" path="res://props/table2.tscn" id="15_getpj"]
 [ext_resource type="AudioStream" uid="uid://17n4oufnrvga" path="res://sounds/plaza.mp3" id="16_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://cm0gxl8qotc14" path="res://props/chair1.tscn" id="16_ryguw"]
@@ -448,6 +449,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.5, -8.5)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
+[node name="hazard" type="CSGBox3D" parent="dream" unique_id=646821473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.25, 0.25, 2.75)
+material_override = ExtResource("15_0odxb")
+use_collision = true
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="hazard3" type="CSGBox3D" parent="dream" unique_id=1093149671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.25, 0.25, 3.25)
+material_override = ExtResource("15_0odxb")
+use_collision = true
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="hazard2" type="CSGBox3D" parent="dream" unique_id=1063972884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.5, 2.5)
+material_override = ExtResource("15_0odxb")
+use_collision = true
+
 [node name="table" parent="dream" unique_id=838838506 instance=ExtResource("20_82xsv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 11.6)
 offset = Vector2(0, 8)
@@ -512,13 +530,13 @@ texture = ExtResource("11_efxa6")
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(1, 0, 1, 1)
-text = "...?"
+text = "...."
 color = Color(1, 0, 1, 1)
 lines = "..
 ...
 ....
 ...?"
-idx = 3
+idx = 2
 
 [node name="look2" type="Sprite3D" parent="dream" unique_id=748282432]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6, 0, 1.5)
@@ -531,12 +549,13 @@ texture = ExtResource("21_1u8w0")
 [node name="dialogue" parent="dream/look2" unique_id=1826785398 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(1, 1, 0, 1)
-text = "haii!!!"
+text = "welcome to cloud!!!"
 color = Color(1, 1, 0, 1)
 lines = "haii!!!
 hello!!!
 <3
 welcome to cloud!!!"
+idx = 3
 
 [node name="music_plaza" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
