@@ -73,410 +73,410 @@ transform = Transform3D(-0.50000006, -0.74999994, 0.43301272, 0, 0.50000006, 0.8
 shadow_enabled = true
 
 [node name="wall" type="CSGBox3D" parent="dream" unique_id=62638301]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -6)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(2, 1, 1)
 
 [node name="wall4" type="CSGBox3D" parent="dream" unique_id=816510411]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -5)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 
 [node name="wall43" type="CSGBox3D" parent="dream" unique_id=1659196905]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.95, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.45, -4)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(1, 0.1, 1)
 
 [node name="wall8" type="CSGBox3D" parent="dream" unique_id=492867176]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -6)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall9" type="CSGBox3D" parent="dream" unique_id=1087416407]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0.5, 3.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall23" type="CSGBox3D" parent="dream" unique_id=1557208966]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.5, 0.5, 5.55)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6, 0, 0.05000019)
 material_override = ExtResource("4_vivmo")
 use_collision = true
 size = Vector3(1, 1, 0.90000004)
 
 [node name="wall26" type="CSGBox3D" parent="dream" unique_id=1793166977]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.5, 0.5, 5.55)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -10, 0, 0.05000019)
 material_override = ExtResource("4_vivmo")
 use_collision = true
 size = Vector3(1, 1, 0.90000004)
 
 [node name="wall28" type="CSGBox3D" parent="dream" unique_id=1033341230]
-transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -9.5, 0.5, -2.5499997)
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -10, 0, -8.049999)
 material_override = ExtResource("4_vivmo")
 use_collision = true
 size = Vector3(1, 1, 0.90000004)
 
 [node name="wall18" type="CSGBox3D" parent="dream" unique_id=217337188]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 1.5, 5.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, 0)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(11, 1, 1)
 
 [node name="wall24" type="CSGBox3D" parent="dream" unique_id=774736117]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0.5, 5.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(2, 1, 1)
 
 [node name="wall25" type="CSGBox3D" parent="dream" unique_id=702487012]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.5, 5.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(3, 1, 1)
 
 [node name="wall27" type="CSGBox3D" parent="dream" unique_id=1992729209]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, 5.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0, 0)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(4, 1, 1)
 
 [node name="wall19" type="CSGBox3D" parent="dream" unique_id=1242062272]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 1.5, -2.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 1, -8)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(11, 1, 1)
 
 [node name="wall29" type="CSGBox3D" parent="dream" unique_id=889814697]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0.5, -2.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0, -8)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(4, 1, 1)
 
 [node name="wall30" type="CSGBox3D" parent="dream" unique_id=227698621]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -2.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0, -8)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(6, 1, 1)
 
 [node name="wall20" type="CSGBox3D" parent="dream" unique_id=1889977552]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.5, -1.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 4)
 
 [node name="wall31" type="CSGBox3D" parent="dream" unique_id=1087190627]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1, -1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.5, -7)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 3)
 
 [node name="aether" type="CSGBox3D" parent="dream" unique_id=777164043]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.95, 0.5, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.45, 0, -4.5)
 material_override = ExtResource("4_1bvp3")
 size = Vector3(0.1, 1, 2)
 
 [node name="wall32" type="CSGBox3D" parent="dream" unique_id=2025721465]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5, 1.5, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 1, -4.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 1, 2)
 
 [node name="wall21" type="CSGBox3D" parent="dream" unique_id=1538388685]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, 4.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -1)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 5)
 
 [node name="wall34" type="CSGBox3D" parent="dream" unique_id=318825621]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1.5, 7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 2)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(5, 1, 1)
 
 [node name="wall37" type="CSGBox3D" parent="dream" unique_id=1079654954]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 11.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 6)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 1, 7)
 
 [node name="wall36" type="CSGBox3D" parent="dream" unique_id=847764875]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 2.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 1, 2)
 
 [node name="wall38" type="CSGBox3D" parent="dream" unique_id=708509804]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1.5, 9.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 4)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(5, 1, 1)
 
 [node name="wall40" type="CSGBox3D" parent="dream" unique_id=1929000790]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1.5, 12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 6.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 1, 6)
 
 [node name="wall41" type="CSGBox3D" parent="dream" unique_id=909525571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.5, 15.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1, 10)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(8, 1, 1)
 
 [node name="wall22" type="CSGBox3D" parent="dream" unique_id=214956376]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, -6.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 2, 4)
 
 [node name="wall35" type="CSGBox3D" parent="dream" unique_id=1033589700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -7.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(3, 1, 2)
 
 [node name="wall44" type="CSGBox3D" parent="dream" unique_id=47162602]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.5, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -7.5)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 size = Vector3(1, 1, 2)
 
 [node name="wall45" type="CSGBox3D" parent="dream" unique_id=1157396772]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, -1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -7)
 material_override = ExtResource("5_vivmo")
 use_collision = true
 
 [node name="wall11" type="CSGBox3D" parent="dream" unique_id=381777889]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0.5, 3.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -2)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall12" type="CSGBox3D" parent="dream" unique_id=365354190]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0.5, 3.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -2)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall13" type="CSGBox3D" parent="dream" unique_id=1771191456]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0.5, 3.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -2)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall14" type="CSGBox3D" parent="dream" unique_id=1005459468]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0.5, 3.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -2)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall15" type="CSGBox3D" parent="dream" unique_id=1283693377]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -6)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall16" type="CSGBox3D" parent="dream" unique_id=939455956]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall17" type="CSGBox3D" parent="dream" unique_id=1367693509]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -6)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall10" type="CSGBox3D" parent="dream" unique_id=26029737]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 0.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -6)
 material_override = ExtResource("3_5vw27")
 use_collision = true
 
 [node name="wall5" type="CSGBox3D" parent="dream" unique_id=1439748106]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1.5)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(1, 1, 4)
 
 [node name="wall6" type="CSGBox3D" parent="dream" unique_id=248365556]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, 6.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(3, 1, 1)
 
 [node name="wall7" type="CSGBox3D" parent="dream" unique_id=623593719]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, 12.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 7)
 material_override = SubResource("StandardMaterial3D_yaehf")
 use_collision = true
 size = Vector3(8, 1, 7)
 
 [node name="wall42" type="CSGBox3D" parent="dream" unique_id=111438632]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2.5)
 material_override = ExtResource("7_ycdy4")
 use_collision = true
 size = Vector3(7, 1, 2)
 
 [node name="door" parent="dream" unique_id=1535403596 instance=ExtResource("9_074og")]
-transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0.5, 1.5, 7)
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0, 1, 1.5)
 
 [node name="door2" parent="dream" unique_id=682020155 instance=ExtResource("9_074og")]
-transform = Transform3D(1, 0, -2.3841858e-07, 0, 1, 0, 2.3841858e-07, 0, 1, -0.5, 1.5, -1)
+transform = Transform3D(1, 0, -2.3841858e-07, 0, 1, 0, 2.3841858e-07, 0, 1, -1, 1, -6.5)
 
 [node name="wall2" type="CSGBox3D" parent="dream" unique_id=141242612]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -6)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(1, 2, 1)
 
 [node name="wall39" type="CSGBox3D" parent="dream" unique_id=800964438]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.25, -4)
 material_override = ExtResource("8_vivmo")
 use_collision = true
 size = Vector3(0.5, 0.5, 0.5)
 
 [node name="wall3" type="CSGBox3D" parent="dream" unique_id=670156482]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -2.5)
 material_override = ExtResource("3_h2yge")
 use_collision = true
 size = Vector3(1, 2, 8)
 
 [node name="floor" type="CSGBox3D" parent="dream" unique_id=892232044]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.050000012, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.55, -2.5)
 material_override = ExtResource("2_1bvp3")
 use_collision = true
 size = Vector3(2, 0.1, 6)
 
 [node name="floor3" type="CSGBox3D" parent="dream" unique_id=2114369875]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -0.050000012, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, -0.55, -4)
 material_override = ExtResource("2_1bvp3")
 use_collision = true
 size = Vector3(12, 0.1, 9)
 
 [node name="floor2" type="CSGBox3D" parent="dream" unique_id=1325163792]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.050000012, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.55, -4)
 material_override = ExtResource("2_1bvp3")
 use_collision = true
 size = Vector3(2, 0.1, 1)
 
 [node name="ramp" type="CSGPolygon3D" parent="dream" unique_id=1728936680]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 6)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.5, -0.5, 0.5)
 material_override = ExtResource("2_1bvp3")
 use_collision = true
 polygon = PackedVector2Array(0, 0, 0, 1, 2, 0)
 
 [node name="ramp2" type="CSGPolygon3D" parent="dream" unique_id=2108117228]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -21, -1, 3)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -21.5, -1.5, -2.5)
 material_override = SubResource("StandardMaterial3D_d13ii")
 use_collision = true
 polygon = PackedVector2Array(0, 0, 0, 1, 2, 0)
 
 [node name="railing" parent="dream" unique_id=427798454 instance=ExtResource("11_yaehf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.25, 6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0.5)
 
 [node name="railing2" parent="dream" unique_id=428837237 instance=ExtResource("11_yaehf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1.25, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.75, -8.5)
 
 [node name="railing3" parent="dream" unique_id=1851824593 instance=ExtResource("11_yaehf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.25, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.75, -8.5)
 
 [node name="railing7" parent="dream" unique_id=1607148089 instance=ExtResource("11_yaehf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1.25, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.75, -5.5)
 
 [node name="railing8" parent="dream" unique_id=651718972 instance=ExtResource("11_yaehf")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 1.25, 1.5)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.5, 0.75, -4)
 
 [node name="railing9" parent="dream" unique_id=142384120 instance=ExtResource("11_yaehf")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -19.5, 0.25, 3)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -20, -0.25, -2.5)
 
 [node name="cloud" type="CSGBox3D" parent="dream" unique_id=1228046391]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, -4.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -10)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud2" type="CSGBox3D" parent="dream" unique_id=847720978]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, -5.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -11)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud3" type="CSGBox3D" parent="dream" unique_id=872411319]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.5, -5.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -11)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud6" type="CSGBox3D" parent="dream" unique_id=159195221]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -0.5, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, -1, -4.5)
 material_override = ExtResource("13_cegan")
 use_collision = true
 size = Vector3(2, 1, 2)
 
 [node name="cloud10" type="CSGBox3D" parent="dream" unique_id=433873171]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -0.5, 2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, -1, -3.5)
 material_override = ExtResource("13_cegan")
 use_collision = true
 size = Vector3(2, 1, 2)
 
 [node name="cloud13" type="CSGBox3D" parent="dream" unique_id=369778349]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, -1.5, 5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, -2, -0.5)
 material_override = ExtResource("13_cegan")
 use_collision = true
 size = Vector3(2, 1, 2)
 
 [node name="cloud8" type="CSGBox3D" parent="dream" unique_id=1059418842]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, -1, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, -1.5, -4.5)
 material_override = ExtResource("13_cegan")
 use_collision = true
 size = Vector3(2, 2, 2)
 
 [node name="cloud12" type="CSGBox3D" parent="dream" unique_id=141475861]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5, 0.5, -5.5)
 material_override = ExtResource("13_cegan")
 use_collision = true
 size = Vector3(2, 2, 2)
 
 [node name="cloud7" type="CSGBox3D" parent="dream" unique_id=723239502]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 0.5, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 0, -4)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud11" type="CSGBox3D" parent="dream" unique_id=1151745191]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, 0.5, 2.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -3)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud9" type="CSGBox3D" parent="dream" unique_id=1347014281]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5, 0.5, -1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -7)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud4" type="CSGBox3D" parent="dream" unique_id=868992953]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2.5, -7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -13)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="cloud5" type="CSGBox3D" parent="dream" unique_id=1890089704]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.5, -8.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -14)
 material_override = ExtResource("13_cegan")
 use_collision = true
 
 [node name="hazard" type="CSGBox3D" parent="dream" unique_id=646821473]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.25, 0.25, 2.75)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.75, -0.25, -2.75)
 material_override = ExtResource("15_0odxb")
 use_collision = true
 size = Vector3(0.5, 0.5, 0.5)
 
 [node name="hazard3" type="CSGBox3D" parent="dream" unique_id=1093149671]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.25, 0.25, 3.25)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.75, -0.25, -2.25)
 material_override = ExtResource("15_0odxb")
 use_collision = true
 size = Vector3(0.5, 0.5, 0.5)
 
 [node name="hazard2" type="CSGBox3D" parent="dream" unique_id=1063972884]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.5, 2.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, -3)
 material_override = ExtResource("15_0odxb")
 use_collision = true
 
 [node name="target" type="MeshInstance3D" parent="dream" unique_id=646205374]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0.01, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -0.49, -4)
 material_override = ExtResource("16_lswn8")
 mesh = SubResource("QuadMesh_lswn8")
 
 [node name="table" parent="dream" unique_id=838838506 instance=ExtResource("20_82xsv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 11.6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, 6.1000004)
 offset = Vector2(0, 8)
 flip_h = true
 pixel_size = 0.02
@@ -484,35 +484,35 @@ billboard = 2
 texture_filter = 4
 
 [node name="table2" parent="dream" unique_id=271117877 instance=ExtResource("20_82xsv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 1, 13.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.5, 7.8)
 offset = Vector2(0, 8)
 pixel_size = 0.02
 billboard = 2
 texture_filter = 4
 
 [node name="table4" parent="dream" unique_id=355758231 instance=ExtResource("15_getpj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4000001, 1, 13.4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9000001, 0.5, 7.8999996)
 
 [node name="chair1" parent="dream" unique_id=213822192 instance=ExtResource("16_ryguw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9000001, 1, 13.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 0.5, 8)
 
 [node name="chair2" parent="dream" unique_id=597479562 instance=ExtResource("16_ryguw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1000001, 1, 13.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6000001, 0.5, 8)
 flip_h = true
 
 [node name="chair3" parent="dream" unique_id=2104061244 instance=ExtResource("16_ryguw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10000017, 1, 11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.60000014, 0.5, 5.5)
 flip_h = true
 
 [node name="chair4" parent="dream" unique_id=977537547 instance=ExtResource("16_ryguw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000002, 1, -2.4000003)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3000002, 0.5, -7.9000006)
 flip_h = true
 
 [node name="debugcamera" type="Camera3D" parent="dream" unique_id=306844708]
-transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, 0, 3.1, 4)
+transform = Transform3D(1, 0, 0, 0, 0.25881907, 0.9659258, 0, -0.9659258, 0.25881907, -0.5, 2.6, -1.5)
 
 [node name="goob" type="Sprite3D" parent="dream" unique_id=2122799350]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3, 0, -0.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8, -0.5, -5.8)
 offset = Vector2(0, 32)
 billboard = 2
 alpha_cut = 1
@@ -530,7 +530,7 @@ quit starin'"
 idx = 2
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0, 3.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9, -0.5, -2.2)
 offset = Vector2(0, 32)
 billboard = 2
 alpha_cut = 1
@@ -540,15 +540,16 @@ texture = ExtResource("11_efxa6")
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(1, 0, 1, 1)
+text = "...."
 color = Color(1, 0, 1, 1)
 lines = "..
 ...
 ....
 ...?"
-idx = 1
+idx = 2
 
 [node name="look2" type="Sprite3D" parent="dream" unique_id=748282432]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6, 0, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.1, -0.5, -4)
 offset = Vector2(0, 32)
 billboard = 2
 alpha_cut = 1
@@ -558,25 +559,25 @@ texture = ExtResource("21_1u8w0")
 [node name="dialogue" parent="dream/look2" unique_id=1826785398 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(1, 1, 0, 1)
-text = "<3"
+text = "welcome to cloud!!!"
 color = Color(1, 1, 0, 1)
 lines = "haii!!!
 hello!!!
 <3
 welcome to cloud!!!"
-idx = 2
+idx = 3
 
 [node name="music_plaza" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 1.5, -4)
 stream = ExtResource("16_2cqfq")
 autoplay = true
 max_distance = 8.0
 
 [node name="music_break" type="AudioStreamPlayer3D" parent="dream" unique_id=1805433317]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 12.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, 7)
 stream = ExtResource("14_vivmo")
 autoplay = true
 max_distance = 8.0
 
 [node name="player" parent="dream" unique_id=1119564877 instance=ExtResource("8_dg77c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 5.4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -0.099999905)
