@@ -522,12 +522,12 @@ texture = ExtResource("9_kek77")
 [node name="dialogue" parent="dream/goob" unique_id=1693157045 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(0, 1, 0, 1)
-text = "absolute eyesore aren't ya"
+text = "quit starin'"
 color = Color(0, 1, 0, 1)
 lines = "don't like how that guy's eyein' me
 absolute eyesore aren't ya
 quit starin'"
-idx = 1
+idx = 2
 
 [node name="look" type="Sprite3D" parent="dream" unique_id=712641277]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0, 3.3)
@@ -540,13 +540,12 @@ texture = ExtResource("11_efxa6")
 [node name="dialogue" parent="dream/look" unique_id=559593343 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(1, 0, 1, 1)
-text = "...?"
 color = Color(1, 0, 1, 1)
 lines = "..
 ...
 ....
 ...?"
-idx = 3
+idx = 1
 
 [node name="look2" type="Sprite3D" parent="dream" unique_id=748282432]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6, 0, 1.5)
@@ -559,12 +558,13 @@ texture = ExtResource("21_1u8w0")
 [node name="dialogue" parent="dream/look2" unique_id=1826785398 instance=ExtResource("14_w48qg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70000005, 0)
 modulate = Color(1, 1, 0, 1)
-text = "haii!!!"
+text = "<3"
 color = Color(1, 1, 0, 1)
 lines = "haii!!!
 hello!!!
 <3
 welcome to cloud!!!"
+idx = 2
 
 [node name="music_plaza" type="AudioStreamPlayer3D" parent="dream" unique_id=439626442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, 1.5)
