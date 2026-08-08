@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://biuq5xmhicstf"]
+
+[ext_resource type="Script" uid="uid://bonxngubh3g8a" path="res://components/smoothcamera.gd" id="1_dg3rv"]
+
+[node name="smoothcamera" type="Camera3D" unique_id=794724102]
+script = ExtResource("1_dg3rv")
